@@ -5,7 +5,6 @@ $danger: #dc3545;
     background-color: $danger;
     display: inline;
     padding: 2px;
-    /* margin: 50px 0; */
 }
 .orange {
     background-color: $orange;
@@ -40,8 +39,12 @@ section {
     padding: 20px 0;
 }
 .header {
+    padding: 30px 0;
     background: url("../img/bg.jpg") 50% / cover no-repeat fixed;
     height: 70vh;
+    @media (max-width: 1335px) {
+        height: auto;
+    }
     color: $whele;
     &__form {
         color: #000;
@@ -106,8 +109,11 @@ section {
                     border-radius: 3px;
                     background: #3b3102;
                     display: inline-block;
-                    @media (max-width: 320px) {
+                    @media (max-width: 375px) {
                         padding: 10px;
+                    }
+                    @media (max-width: 350px) {
+                        padding: 4px;
                     }
                 }
                 .countdown-text {

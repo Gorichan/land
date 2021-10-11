@@ -2,7 +2,6 @@
   background-color: #dc3545;
   display: inline;
   padding: 2px;
-  /* margin: 50px 0; */
 }
 
 .orange {
@@ -44,9 +43,16 @@ section {
 }
 
 .header {
+  padding: 30px 0;
   background: url("../img/bg.jpg") 50%/cover no-repeat fixed;
   height: 70vh;
   color: #fff;
+}
+
+@media (max-width: 1335px) {
+  .header {
+    height: auto;
+  }
 }
 
 .header__form {
@@ -140,9 +146,15 @@ section {
   display: inline-block;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .header__time .countdown .countdown-number .countdown-time {
     padding: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__time .countdown .countdown-number .countdown-time {
+    padding: 4px;
   }
 }
 
