@@ -1,0 +1,227 @@
+$whele: #fff;
+$orange: #fd7e14;
+$danger: #dc3545;
+.danger {
+    background-color: $danger;
+    display: inline;
+    padding: 2px;
+    /* margin: 50px 0; */
+}
+.orange {
+    background-color: $orange;
+    display: inline;
+    padding: 2px;
+}
+.title {
+    font-weight: 400;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: $danger;
+        position: absolute;
+        bottom: 0;
+    }
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+section {
+    padding: 20px 0;
+}
+.header {
+    background: url("../img/bg.jpg") 50% / cover no-repeat fixed;
+    height: 70vh;
+    color: $whele;
+    &__form {
+        color: #000;
+        background-color: $whele;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $orange;
+        border-radius: 10px;
+        .form-control {
+            transition: 0.5s;
+            &:hover {
+                border: 1px solid $orange;
+            }
+        }
+        .btn-hover {
+            display: inline-block;
+            width: 100px;
+            transition: 0.5s;
+            &:hover {
+                background-color: $danger;
+                color: $whele;
+            }
+        }
+    }
+    &__txt {
+        h1 {
+            font-size: 30px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            @media (max-width: 320px) {
+                font-size: 22px;
+            }
+        }
+        p {
+            @media (max-width: 320px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__time {
+        .countdown {
+            font-family: sans-serif;
+            color: #fff;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+            @media (max-width: 320px) {
+                font-size: 20px;
+            }
+            .countdown-number {
+                padding: 10px;
+                border-radius: 3px;
+                display: inline-block;
+                @media (max-width: 320px) {
+                    padding: 5px;
+                }
+                .countdown-time {
+                    padding: 15px;
+                    border-radius: 3px;
+                    background: #3b3102;
+                    display: inline-block;
+                    @media (max-width: 320px) {
+                        padding: 10px;
+                    }
+                }
+                .countdown-text {
+                    display: block;
+                    padding-top: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.advantage {
+    .card {
+        padding: 10px;
+        .card-img-top {
+            max-width: 48px;
+            height: auto;
+        }
+    }
+    &__info {
+        .info-txt-list {
+            .info-txt-liner {
+                display: flex;
+                @media (max-width: 400px) {
+                    margin: 5px 0;
+                }
+                &::before {
+                    content: "\2756 ";
+                    margin-right: 5px;
+                }
+            }
+        }
+        .info__txt-btn {
+            .btn-hover {
+                display: inline-block;
+                width: 150px;
+                transition: 0.5s;
+                &:hover {
+                    background-color: $danger;
+                    color: $whele;
+                }
+            }
+        }
+    }
+}
+.criteria {
+    .card {
+        padding: 20px;
+        background-color: #c6cfc6;
+        .card-img-top {
+            max-width: 48px;
+            height: auto;
+        }
+    }
+    .btn-hover {
+        display: inline-block;
+        max-width: 300px;
+        transition: 0.5s;
+        &:hover {
+            background-color: $danger;
+            color: $whele;
+        }
+    }
+}
+.reviews {
+    &__txt {
+        p {
+            font-weight: 200;
+        }
+        h5 {
+            font-size: 24px;
+        }
+        span {
+            font-size: 15px;
+        }
+    }
+    .btn-hover {
+        display: inline-block;
+        width: 300px;
+        transition: 0.5s;
+        &:hover {
+            background-color: $danger;
+            color: $whele;
+        }
+    }
+}
+
+.questions {
+    padding: 20px 0;
+    /* height: 50vh; */
+    background: url("../img/bg-quest.jpg") 50% / cover no-repeat;
+    color: $whele;
+    @media (max-width: 905px) {
+       height: auto;
+    }
+    &__form {
+        .form-control {
+            width: 250px !important;
+            background-color: initial;
+            border: 2px solid $whele !important;
+            &::placeholder{
+                color: $whele;
+            }
+        }
+        
+    }
+    .btn-hover {
+        display: inline-block;
+        width: 300px;
+        transition: 0.5s;
+        &:hover {
+            background-color: $danger;
+            color: $whele;
+        }
+    }
+}
