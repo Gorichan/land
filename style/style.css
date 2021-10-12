@@ -250,7 +250,6 @@ section {
 
 .questions {
   padding: 20px 0;
-  /* height: 50vh; */
   background: url("../img/bg-quest.jpg") 50%/cover no-repeat;
   color: #fff;
 }
